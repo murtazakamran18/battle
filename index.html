@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Tap Hero</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="background"></div>
+        
+        <div class="ui-container">
+            <div class="score-container">
+                <span>Score: </span>
+                <span id="score">0</span>
+            </div>
+            
+            <div class="combo-container">
+                <span id="combo-text">Combo: x1</span>
+                <div class="combo-meter">
+                    <div id="combo-fill"></div>
+                </div>
+            </div>
+            
+            <div class="energy-container">
+                <span>Energy</span>
+                <div class="energy-bar">
+                    <div id="energy-fill"></div>
+                </div>
+            </div>
+            
+            <div class="powerups-container">
+                <div class="powerup" id="double-jump">
+                    <div class="powerup-icon">↑↑</div>
+                    <div class="powerup-label">Double Jump</div>
+                </div>
+                <div class="powerup" id="rage-mode">
+                    <div class="powerup-icon">🔥</div>
+                    <div class="powerup-label">Rage Mode</div>
+                </div>
+                <div class="powerup" id="shield">
+                    <div class="powerup-icon">🛡️</div>
+                    <div class="powerup-label">Shield</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="hero" class="hero">
+            <div class="hero-body"></div>
+            <div class="hero-face"></div>
+            <div class="hero-weapon"></div>
+            <div class="attack-effect"></div>
+            <div class="shield-effect"></div>
+        </div>
+        
+        <div id="game-floor" class="game-floor"></div>
+        
+        <div id="entities-container" class="entities-container"></div>
+        
+        <div id="tutorial" class="tutorial">
+            <div class="tutorial-text">Tap Left or Press A to Jump</div>
+            <div class="tutorial-text">Tap Right or Press D to Attack</div>
+            <div class="tutorial-start">Tap anywhere to start!</div>
+        </div>
+        
+        <div id="game-over" class="game-over">
+            <div class="game-over-text">Game Over</div>
+            <div class="final-score">Score: <span id="final-score">0</span></div>
+            <button id="retry-button" class="retry-button">Play Again</button>
+        </div>
+        
+        <div class="controls">
+            <div id="jump-button" class="control-button">JUMP</div>
+            <div id="attack-button" class="control-button">ATTACK</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
